@@ -6,7 +6,6 @@ import spacy
 from torchtext.datasets import Multi30k
 from torchtext.data import Field
 from utils import Transformer, translate_sentence
-from waitress import serve
 
 # run the app
 app = Flask(__name__)
@@ -18,14 +17,11 @@ spacy_eng = spacy.load("en_core_web_sm")
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model_name = "my_checkpoint.pth"
 
-
 def tokenize_de(text):
   return [tok.text for tok in spacy_de.tokenizer(text)]
 
-
 def tokenize_eng(text):
   return [tok.text for tok in spacy_eng.tokenizer(text)]
-
 
 german = Field(tokenize=tokenize_de, lower=True, init_token="<sos>", eos_token="<eos>")
 
@@ -82,6 +78,5 @@ def predict():
 
   return jsonify({'translation': prediction})
 
-
 if __name__ == '__main__':
-  serve(app, host="0.0.0.0", port=8080)
+  app.run()
