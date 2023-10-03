@@ -1,0 +1,15 @@
+__pycache__/
+data/
+.idea/
+.env
+*.bkp
+
+.DS_Store
+node_modules
+dist/
+
+training/opus100-ckpt/
+
+
+/training/archive/
+/training/.data/
