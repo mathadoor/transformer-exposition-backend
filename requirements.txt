@@ -39,7 +39,7 @@ spacy-loggers==1.0.5
 srsly==2.4.8
 sympy==1.12
 thinc==8.1.12
-torch==2.1.0+cpu
+https://download.pytorch.org/whl/cpu/torch-2.0.1%2Bcpu-cp38-cp38-linux_x86_64.whl
 torchtext==0.6.0
 tqdm==4.66.1
 triton==2.0.0
