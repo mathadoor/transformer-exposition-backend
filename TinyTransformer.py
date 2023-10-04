@@ -79,4 +79,4 @@ def predict():
   return jsonify({'translation': prediction})
 
 if __name__ == '__main__':
-  app.run()
+  app.run(host="localhost", port=5000)
