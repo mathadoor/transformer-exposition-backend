@@ -4,7 +4,6 @@ The base code is sourced from https://github.com/aladdinpersson/Machine-Learning
 
 import torch
 from torch import nn
-import spacy
 
 
 class Transformer(nn.Module):
@@ -96,16 +95,16 @@ def translate_sentence(model, sentence, german, english, device, spacy_eng, max_
     tokens = [token.lower() for token in sentence]
 
   # Add <SOS> and <EOS> in beginning and end respectively
-  tokens.insert(0, english.init_token)
-  tokens.append(english.eos_token)
+  tokens.insert(0, english["stoi"]['<sos>'])
+  tokens.append(english["stoi"]['<eos>'])
 
   # Go through each English token and convert to an index
-  text_to_indices = [english.vocab.stoi[token] for token in tokens]
+  text_to_indices = [english["stoi"][token] for token in tokens]
 
   # Convert to Tensor
   sentence_tensor = torch.LongTensor(text_to_indices).unsqueeze(1).to(device)
 
-  outputs = [german.vocab.stoi["<sos>"]]
+  outputs = [german["stoi"]["<sos>"]]
   for i in range(max_length):
     trg_tensor = torch.LongTensor(outputs).unsqueeze(1).to(device)
     target_mask = torch.nn.Transformer.generate_square_subsequent_mask(trg_tensor.shape[0]).to(device)
@@ -115,9 +114,9 @@ def translate_sentence(model, sentence, german, english, device, spacy_eng, max_
     best_guess = output.argmax(2)[-1, :].item()
     outputs.append(best_guess)
 
-    if best_guess == german.vocab.stoi["<eos>"]:
+    if best_guess == german["stoi"]["<eos>"]:
       break
 
-  translated_sentence = [german.vocab.itos[idx] for idx in outputs]
+  translated_sentence = [german["itos"][idx] for idx in outputs]
   # remove start token
   return translated_sentence[1:]
