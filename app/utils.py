@@ -85,12 +85,12 @@ class Transformer(nn.Module):
     return out
 
 
-def translate_sentence(model, sentence, german, english, device, spacy_eng, max_length=50):
+def translate_sentence(model, sentence, german, english, device, tokenizer, max_length=50):
   # Load English tokenizer
 
   # Create tokens using spacy and everything in lower case (which is what our vocab is)
   if type(sentence) == str:
-    tokens = [token.text.lower() for token in spacy_eng(sentence)]
+    tokens = [token.text.lower() for token in tokenizer(sentence)]
   else:
     tokens = [token.lower() for token in sentence]
 
