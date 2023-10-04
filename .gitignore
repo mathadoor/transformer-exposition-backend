@@ -1,8 +1,10 @@
 __pycache__/
-data/
+../data/
 .idea/
 .env
 *.bkp
+
+*/logs/
 
 .DS_Store
 node_modules
