@@ -1,0 +1,11 @@
+2023-10-04T17:28:11,585 - /127.0.0.1:42138 "POST /predictions/TinyTransformer HTTP/1.1" 200 37
+2023-10-04T17:28:23,050 - /127.0.0.1:56190 "POST /predictions/TinyTransformer HTTP/1.1" 200 32
+2023-10-04T17:28:39,111 - /127.0.0.1:60028 "POST /predictions/TinyTransformer HTTP/1.1" 200 50
+2023-10-04T17:28:42,548 - /127.0.0.1:60038 "POST /predictions/TinyTransformer HTTP/1.1" 200 41
+2023-10-04T17:29:21,378 - /127.0.0.1:57010 "POST /predictions/TinyTransformer HTTP/1.1" 200 39
+2023-10-04T17:29:56,068 - /127.0.0.1:45758 "POST /predictions/TinyTransformer HTTP/1.1" 200 68
+2023-10-04T17:30:34,412 - /127.0.0.1:59432 "POST /predictions/TinyTransformer HTTP/1.1" 200 23
+2023-10-04T17:30:41,716 - /127.0.0.1:39614 "POST /predictions/TinyTransformer HTTP/1.1" 200 38
+2023-10-04T17:30:45,957 - /127.0.0.1:48254 "POST /predictions/TinyTransformer HTTP/1.1" 200 39
+2023-10-04T17:30:46,988 - /127.0.0.1:48268 "POST /predictions/TinyTransformer HTTP/1.1" 200 46
+2023-10-04T17:30:47,912 - /127.0.0.1:48270 "POST /predictions/TinyTransformer HTTP/1.1" 200 39

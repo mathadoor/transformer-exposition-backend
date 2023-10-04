@@ -3,7 +3,6 @@ from flask_cors import CORS
 
 import torch
 import pickle
-import spacy
 from utils import Transformer, translate_sentence
 
 # run the app

@@ -1,168 +1,35 @@
-2023-10-04T14:38:24,650 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=19499
-2023-10-04T14:38:24,650 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:38:24,679 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:38:24,679 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]19499
-2023-10-04T14:38:24,679 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:38:24,679 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:38:24,687 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:38:24,709 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_name: TinyTransformer, batchSize: 1
-2023-10-04T14:38:24,735 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - proceeding without onnxruntime
-2023-10-04T14:38:24,735 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
-2023-10-04T14:38:24,735 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend worker process died.
-2023-10-04T14:38:24,735 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-10-04T14:38:24,735 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 253, in <module>
-2023-10-04T14:38:24,735 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     worker.run_server()
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 221, in run_server
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 184, in handle_connection
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 131, in load_model
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     service = model_loader.load(
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_loader.py", line 135, in load
-2023-10-04T14:38:24,736 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
-2023-10-04T14:38:24,737 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/tmp/models/b94cb400ccc4486aab069672a968187c/TranslationHandler.py", line 32, in initialize
-2023-10-04T14:38:24,737 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     with open('english_tokenizer.pkl', 'rb') as f:
-2023-10-04T14:38:24,737 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - FileNotFoundError: [Errno 2] No such file or directory: 'english_tokenizer.pkl'
-2023-10-04T14:38:26,455 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=19569
-2023-10-04T14:38:26,456 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:38:26,480 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:38:26,481 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]19569
-2023-10-04T14:38:26,481 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:38:26,481 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:38:26,482 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:38:28,192 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=19605
-2023-10-04T14:38:28,192 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:38:28,225 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:38:28,225 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]19605
-2023-10-04T14:38:28,225 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:38:28,225 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:38:28,226 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:45:08,248 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=20935
-2023-10-04T14:45:08,249 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:45:08,275 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:45:08,275 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]20935
-2023-10-04T14:45:08,275 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:45:08,275 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:45:08,284 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:45:08,302 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_name: TinyTransformer, batchSize: 1
-2023-10-04T14:45:08,331 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - proceeding without onnxruntime
-2023-10-04T14:45:08,331 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
-2023-10-04T14:45:08,341 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Failed to load model TinyTransformer, exception PytorchStreamReader failed locating file constants.pkl: file not found
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 131, in load_model
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     service = model_loader.load(
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_loader.py", line 135, in load
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/tmp/models/feea1b6c37404ebdb46fac57cc16e7e4/TranslationHandler.py", line 60, in initialize
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.model = torch.jit.load(model_pt_path)
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/torch/jit/_serialization.py", line 162, in load
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     cpp_module = torch._C.import_ir_module(cu, str(f), map_location, _extra_files, _restore_shapes)  # type: ignore[call-arg]
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - RuntimeError: PytorchStreamReader failed locating file constants.pkl: file not found
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend worker process died.
-2023-10-04T14:45:08,342 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 253, in <module>
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     worker.run_server()
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 221, in run_server
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 189, in handle_connection
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
-2023-10-04T14:45:08,343 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
-2023-10-04T14:45:10,067 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=21005
-2023-10-04T14:45:10,068 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:45:10,094 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:45:10,094 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]21005
-2023-10-04T14:45:10,094 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:45:10,094 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:45:10,096 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:45:11,811 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=21040
-2023-10-04T14:45:11,811 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:45:11,837 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:45:11,837 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]21040
-2023-10-04T14:45:11,837 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:45:11,837 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:45:11,838 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:45:14,551 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=21084
-2023-10-04T14:45:14,551 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:45:14,577 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:45:14,577 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]21084
-2023-10-04T14:45:14,577 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:45:14,577 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:45:14,579 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:50:20,832 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=21688
-2023-10-04T14:50:20,832 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:50:20,858 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:50:20,858 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]21688
-2023-10-04T14:50:20,858 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:50:20,858 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:50:20,868 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:50:20,891 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_name: TinyTransformer, batchSize: 1
-2023-10-04T14:50:20,917 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - proceeding without onnxruntime
-2023-10-04T14:50:20,918 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Failed to load model TinyTransformer, exception PytorchStreamReader failed locating file constants.pkl: file not found
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 131, in load_model
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     service = model_loader.load(
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_loader.py", line 135, in load
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
-2023-10-04T14:50:20,928 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/tmp/models/e645884693ed44e994ed71697704996b/TranslationHandler.py", line 60, in initialize
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.model = torch.jit.load(model_pt_path)
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/torch/jit/_serialization.py", line 162, in load
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     cpp_module = torch._C.import_ir_module(cu, str(f), map_location, _extra_files, _restore_shapes)  # type: ignore[call-arg]
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - RuntimeError: PytorchStreamReader failed locating file constants.pkl: file not found
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend worker process died.
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 253, in <module>
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     worker.run_server()
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 221, in run_server
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 189, in handle_connection
-2023-10-04T14:50:20,929 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
-2023-10-04T14:50:20,930 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
-2023-10-04T14:50:22,669 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=21759
-2023-10-04T14:50:22,669 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:50:22,696 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:50:22,696 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]21759
-2023-10-04T14:50:22,696 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:50:22,696 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:50:22,697 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:50:24,418 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=21799
-2023-10-04T14:50:24,418 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:50:24,446 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:50:24,447 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]21799
-2023-10-04T14:50:24,447 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:50:24,447 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:50:24,448 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:50:49,644 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=22034
-2023-10-04T14:50:49,645 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:50:49,671 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:50:49,671 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]22034
-2023-10-04T14:50:49,671 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:50:49,671 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:50:49,681 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
-2023-10-04T14:50:49,699 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_name: TinyTransformer, batchSize: 1
-2023-10-04T14:50:49,727 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - proceeding without onnxruntime
-2023-10-04T14:50:49,727 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
-2023-10-04T14:50:49,728 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend worker process died.
-2023-10-04T14:50:49,728 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Traceback (most recent call last):
-2023-10-04T14:50:49,728 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 253, in <module>
-2023-10-04T14:50:49,728 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     worker.run_server()
-2023-10-04T14:50:49,729 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 221, in run_server
-2023-10-04T14:50:49,729 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
-2023-10-04T14:50:49,729 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 184, in handle_connection
-2023-10-04T14:50:49,729 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
-2023-10-04T14:50:49,729 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_service_worker.py", line 131, in load_model
-2023-10-04T14:50:49,729 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     service = model_loader.load(
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/model_loader.py", line 135, in load
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/torch_handler/base_handler.py", line 166, in initialize
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -   File "/home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/torch_handler/base_handler.py", line 262, in _load_pickled_model
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG -     model = model_class()
-2023-10-04T14:50:49,730 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - TypeError: __init__() missing 11 required positional arguments: 'embedding_size', 'src_vocab_size', 'trg_vocab_size', 'src_pad_idx', 'num_heads', 'num_encoder_layers', 'num_decoder_layers', 'feedforward_dim', 'dropout', 'max_len', and 'device'
-2023-10-04T14:50:51,445 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=22104
-2023-10-04T14:50:51,446 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
-2023-10-04T14:50:51,471 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
-2023-10-04T14:50:51,471 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]22104
-2023-10-04T14:50:51,471 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
-2023-10-04T14:50:51,471 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
-2023-10-04T14:50:51,472 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-10-04T17:28:07,682 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=48870
+2023-10-04T17:28:07,682 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2023-10-04T17:28:07,709 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Successfully loaded /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/ts/configs/metrics.yaml.
+2023-10-04T17:28:07,709 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - [PID]48870
+2023-10-04T17:28:07,710 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch worker started.
+2023-10-04T17:28:07,710 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Python runtime: 3.9.18
+2023-10-04T17:28:07,716 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2023-10-04T17:28:07,739 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_name: TinyTransformer, batchSize: 1
+2023-10-04T17:28:07,766 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2023-10-04T17:28:07,766 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2023-10-04T17:28:08,252 [WARN ] W-9000-TinyTransformer_1.0-stderr MODEL_LOG - /home/mathadoor/miniconda3/envs/bcos/envs/transformerExposition/lib/python3.9/site-packages/torch/nn/modules/transformer.py:282: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+2023-10-04T17:28:08,253 [WARN ] W-9000-TinyTransformer_1.0-stderr MODEL_LOG -   warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+2023-10-04T17:28:11,551 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - extra_files <ts.context.Context object at 0x7f6c05cfe4c0>
+2023-10-04T17:28:11,551 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696454891
+2023-10-04T17:28:11,584 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input KDog.
+2023-10-04T17:28:23,020 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696454903
+2023-10-04T17:28:23,050 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input KThe dog.
+2023-10-04T17:28:39,063 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696454919
+2023-10-04T17:28:39,111 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input KThe dog is running.
+2023-10-04T17:28:42,508 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696454922
+2023-10-04T17:28:42,548 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input KThe dog is running.
+2023-10-04T17:29:21,340 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696454961
+2023-10-04T17:29:21,377 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input KThe dog is running.
+2023-10-04T17:29:56,004 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696454996
+2023-10-04T17:29:56,067 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input The dog is running.
+2023-10-04T17:30:34,390 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696455034
+2023-10-04T17:30:34,412 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input The dog is running.
+2023-10-04T17:30:41,680 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696455041
+2023-10-04T17:30:41,716 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input The dog is running in a park.
+2023-10-04T17:30:45,919 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696455045
+2023-10-04T17:30:45,957 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input The dog is running in a park.
+2023-10-04T17:30:46,945 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696455046
+2023-10-04T17:30:46,988 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input The dog is running in a park.
+2023-10-04T17:30:47,874 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - Backend received inference at: 1696455047
+2023-10-04T17:30:47,912 [INFO ] W-9000-TinyTransformer_1.0-stdout MODEL_LOG - model_input The dog is running in a park.
