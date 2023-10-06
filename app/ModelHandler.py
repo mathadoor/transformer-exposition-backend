@@ -36,7 +36,7 @@ class ModelHandler(BaseHandler):
 
         properties = context.system_properties
         model_dir = properties.get("model_dir")
-        extra_files = context
+        # extra_files = context
 
         self.device = torch.device("cuda:" + str(properties.get("gpu_id")) if torch.cuda.is_available() else "cpu")
 
@@ -46,8 +46,8 @@ class ModelHandler(BaseHandler):
         if not os.path.isfile(model_pt_path):
             raise RuntimeError("Missing the model.pt file")
 
-        print("extra_files", context)
-
+        # print("extra_files", context)
+        #
         # if type(extra_files) != list or len(extra_files) != 3:
         #     raise RuntimeError("Missing the vocab files")
 
