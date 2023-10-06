@@ -94,12 +94,12 @@ def translate_sentence(model, sentence, german, english, device, tokenizer, max_
   else:
     tokens = [token.lower() for token in sentence]
 
+  # Go through each English token and convert to an index
+  text_to_indices = [english["stoi"][token] for token in tokens]
+
   # Add <SOS> and <EOS> in beginning and end respectively
   tokens.insert(0, english["stoi"]['<sos>'])
   tokens.append(english["stoi"]['<eos>'])
-
-  # Go through each English token and convert to an index
-  text_to_indices = [english["stoi"][token] for token in tokens]
 
   # Convert to Tensor
   sentence_tensor = torch.LongTensor(text_to_indices).unsqueeze(1).to(device)

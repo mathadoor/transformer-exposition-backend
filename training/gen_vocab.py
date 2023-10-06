@@ -1,3 +1,5 @@
+import collections
+
 import torch
 import pickle
 import spacy
@@ -31,10 +33,17 @@ train_data, valid_data, test_data = Multi30k.splits(
 german.build_vocab(train_data, max_size=10000, min_freq=2)
 english.build_vocab(train_data, max_size=10000, min_freq=2)
 
-with open('german.pkl', 'wb') as f:
-    pickle.dump(german.vocab.stoi, f)
+with open('../app/german.pkl', 'wb') as f:
+    german_stoi = {}
+    for k, v in german.vocab.stoi.items():
+        german_stoi[k] = v
+    pickle.dump(german_stoi, f)
 
-with open('english.pkl', 'wb') as f:
-    pickle.dump(english.vocab.stoi, f)
+with open('../app/english.pkl', 'wb') as f:
+    english_stoi = {}
+    for k, v in english.vocab.stoi.items():
+        english_stoi[k] = v
+
+    pickle.dump(english_stoi, f)
 
 del train_data, valid_data, test_data, spacy_de

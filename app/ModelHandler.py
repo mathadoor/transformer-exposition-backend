@@ -110,12 +110,12 @@ class ModelHandler(BaseHandler):
         else:
             tokens = [token.lower() for token in model_input]
 
+        # Go through each English token and convert to an index
+        text_to_indices = [int(self.english_vocab["stoi"][token]) for token in tokens]
+
         # Add <SOS> and <EOS> in beginning and end respectively
         tokens.insert(0, self.english_vocab["stoi"]['<sos>'])
         tokens.append(self.english_vocab["stoi"]['<eos>'])
-
-        # Go through each English token and convert to an index
-        text_to_indices = [int(self.english_vocab["stoi"][token]) for token in tokens]
 
         # Convert to Tensor
         sentence_tensor = torch.LongTensor(text_to_indices).unsqueeze(1).to(self.device)
